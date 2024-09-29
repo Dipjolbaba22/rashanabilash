@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rasha Bilash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Rasha Bilash Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 1199 Liberty Avenue, Brooklyn, NY 11208</p>
+        <p>Phone: 347-355-3741</p>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rasha Bilash</p>
+    </footer>
+
+    <script>
+        // Placeholder for Google Map
+        function initMap() {
+            var location = { lat: 40.6782, lng: -73.9442 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
+    
